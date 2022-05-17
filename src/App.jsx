@@ -1,43 +1,25 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import './App.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+    <div className='wrapper'>
+      <div className='logo'>
+        <img src='/images/logo.png' />
+      </div>
+      <h2 className='text-large'>
+        Sàn giao dịch Bitmoon đóng cửa để chuyển sang trang mới về blockchain
+      </h2>
+      <h3 className='text-small'>
+        vui lòng liên hệ{' '}
+        <a href='mailto:support@bitmoon.net'>support@bitmoon.net</a> <br /> nếu
+        có bất cứ thắc mắc gì
+      </h3>
+      <h3 className='text-small-2 text-small'>Try the new Bitmoon at</h3>
+      <p>
+        <a className='button' href='https://bitmoon.network' target='_blank'>
+          https://bitmoon.network
+        </a>
+      </p>
     </div>
   )
 }
